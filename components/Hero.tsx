@@ -29,7 +29,7 @@ const Hero = () => {
                     Hello! I&apos;m Gift, a ReactJS Developer
                 </p>
 
-                <a className='' href="#">
+                <a className='' href="#projects" >
                     <MagicButton title="Show my work" icon={<FaLocationArrow width={50} height={50}/>}
                         position='right'
                     />

@@ -1,7 +1,6 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
     {name:"Experience",link:"#experience"},
     { name: "Contact", link: "#contact" },
   ];
@@ -50,7 +49,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently building a JS Animation library",
+      title: "Currently Working on learning PHP/Laravel",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -73,19 +72,19 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "/ui.earth.com",
+      title: "E-Commerce Store for Gadgets",
+      des: "Electronix your one-stop shop for cutting-edge gadgets, built using shadcn",
+      img: "/electronix.svg",
+      iconLists: ["/re.svg", "/tail.svg","stripe.svg",],
+      link: "https://electronix.vercel.app/",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "/ui.yoom.com",
+      title: "Shoppex - Management Dashboard",
+      des: "Effortlessly track and organize your shopping with real-time insights and streamlined management in one easy-to-use dashboard.",
+      img: "/shoppex.svg",
+      iconLists: ["/re.svg", "/tail.svg","/syncfusion.png"],
+      link: "https://ecommercemanagement-dashboard.netlify.app/",
     },
     {
       id: 3,
@@ -101,105 +100,84 @@ export const navItems = [
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
       img: "/p4.svg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "/ui.apple.com",
+      link: "https://iphoneclonestore.netlify.app/",
     },
   ];
-  
-  export const testimonials = [
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-  ];
-  
+
   export const companies = [
     {
       id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
+      name: "EOH",
+      img: "/eoh.svg",
+     
     },
     {
       id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
+      name: "fivver",
+      img: "/fivver.svg",
     },
     {
       id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
-    },
-    {
-      id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
+      name: "upwork",
+      img: "/upwork.svg",
     },
   ];
   
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Full Stack Developer",
+      company_name: "Promilezi",
+      date: "2024 - till now",
+      desc: "Assisted in the development of a SAAS platform using React.js and PHP Laravel.",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+      title: "Desktop Support Engineer",
+      company_name: "EOH",
+      date: "2022 - 2024",
+      desc: "Troubleshooting and resolving technical issues on desktop computers, ensuring smooth operations for users by installing, configuring, and maintaining hardware and software.",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+      title: "ICT Graduate Intern",
+      company_name: "National School of government",
+      date: "2021 - 2022",
+      desc: "Supporting of desktop computers, ensuring smooth operations for users by installing, configuring, and maintaining",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      title: "Database Teaching Assistant",
+      company_name: "University of Pretoria",
+      date: "2019 - 2019",
+      desc: "help students understand database concepts, assists with queries, and supports learning through hands-on practice and guidance in database management and development.",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },
+    {
+        id: 5,
+        title: "Software Developer Intern",
+        company_name: "Tribus Digita",
+        date: "2018 - 2018",
+        desc: "Assist in developing and testing software applications, collaborates with experienced developers, and gains hands-on experience in coding, debugging, and project management.",
+        className: "md:col-span-2",
+        thumbnail: "/exp4.svg",
+    },
+    {
+        id: 6,
+        title: "Freelance Software Developer",
+        company_name: "fivver",
+        date: "2020 - 2021",
+        desc: "Design, code and test software applications for various clients on a project-by-project basis, offering flexible and specialized tech solutions while managing their own schedules and workload",
+        className: "md:col-span-2",
+        thumbnail: "/exp4.svg",
+      },
   ];
   
   export const socialMedia = [
