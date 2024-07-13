@@ -30,9 +30,9 @@ const Hero = () => {
                 </p>
 
                 <a className='' href="#projects" >
-                    <MagicButton title="Show my work" icon={<FaLocationArrow width={50} height={50}/>}
-                        position='right'
-                    />
+                <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-pink-500 bg-[linear-gradient(110deg,#000103,45%,#F9A9D4,55%,#000103)] bg-[length:200%_100%] px-6 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 focus:ring-offset-pink-300">
+                     Show my Work
+                 </button>
                 </a>
 
             </div>
