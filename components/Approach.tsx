@@ -5,15 +5,24 @@ import { CanvasRevealEffect } from "@/components/ui/CanvasReveal";
 
 const Approach = () => {
   return (
-    <>
+    <section className=" py-20 w-full">
+        <h1 className='heading'>My <span className='text-pink-300'>Approach</span></h1>
       <div className="py-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto px-8">
-        <Card title="Sheetal is Nisha" icon={<AceternityIcon />}>
+        <Card 
+            title="Planning & Designs" 
+            icon={<AceternityIcon order="Phase 1"/>} 
+            description="This phase of development involves documenting client user requirements and using Figma to draft the designs of the client's required product."
+        >
           <CanvasRevealEffect
-            animationSpeed={5.1}
+            animationSpeed={3}
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card title="Nisha is Munni" icon={<AceternityIcon />}>
+        <Card 
+            title="Development & Updates" 
+            icon={<AceternityIcon order="Phase 2" />} 
+            description="After SRS drafting and client approves the designs, this phase will begin with the development of the client's product, it will also include communication with the client to ensure the process is smooth and meets the clients' needs"
+        >
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-black"
@@ -26,7 +35,7 @@ const Approach = () => {
           {/* Radial gradient for the cute fade */}
           <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
         </Card>
-        <Card title="Munni is Aditi" icon={<AceternityIcon />}>
+        <Card title="Deployment & Maintenance" icon={<AceternityIcon order="Phase 3" />} description="This is the final stage of the development, once the product has been built and fully tested, it will be deployed and regular Maintenance done to ensure smooth operation.">
           <CanvasRevealEffect
             animationSpeed={3}
             containerClassName="bg-sky-600"
@@ -34,17 +43,19 @@ const Approach = () => {
           />
         </Card>
       </div>
-    </>
+    </section>
   );
 }
  
 const Card = ({
   title,
   icon,
+  description,
   children,
 }: {
   title: string;
   icon: React.ReactNode;
+  description: string;
   children?: React.ReactNode;
 }) => {
   const [hovered, setHovered] = React.useState(false);
@@ -78,30 +89,23 @@ const Card = ({
         <h2 className="dark:text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
         </h2>
+        <p className="dark:text-white text-sm opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-2  font-light group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+          {description}
+        </p>
       </div>
     </div>
   );
 };
  
-const AceternityIcon = () => {
+const AceternityIcon = ({order}:{order: string}) => {
   return (
-    <svg
-      width="66"
-      height="65"
-      viewBox="0 0 66 65"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-10 w-10 text-black dark:text-white group-hover/canvas-card:text-white "
-    >
-      <path
-        d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
-        stroke="currentColor"
-        strokeWidth="15"
-        strokeMiterlimit="3.86874"
-        strokeLinecap="round"
-        style={{ mixBlendMode: "darken" }}
-      />
-    </svg>
+   <div className='text-xl font-bold'>
+   
+        <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-pink-500 bg-[linear-gradient(110deg,#000103,45%,#F9A9D4,55%,#000103)] bg-[length:200%_100%] px-6 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 focus:ring-offset-pink-300">
+            {order}
+        </button>
+   
+   </div>
   );
 };
  
