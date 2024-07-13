@@ -26,6 +26,11 @@ const config = {
       },
     },
     extend: {
+
+        backgroundImage:{
+            'footer-grid-background':"url(/public/footer-grid.svg)"
+        }
+        ,
       colors: {
         black: {
           DEFAULT: "#000",
